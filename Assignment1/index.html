@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ass .1</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-nav">
+        <section class="upper"><h2>Documentation</h2></section>
+        <section class="bottom">
+          <ul>
+            <li><a href="#header1" class="listings">CSS Overview</a></li>
+            <li>
+              <a href="#header2" class="listings">What is CSS?</a>
+            </li>
+            <li>
+                <a href="#header3" class="listings">How CSS is structured</a>
+            </li>
+            <li>
+                <a href="#header4" class="listings">How CSS works</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="right-nav">
+        <div class="container">
+          <h1 id="header1">CSS Overview</h1>
+          <p>
+            CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content,
+            split it into multiple columns, or add animations and other decorative features.
+            This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, 
+            and how you can start using it to add styling to HTML.
+
+          </p>
+        </div>
+        <div class="container">
+          <h1 id="header2">What is CSS?</h1>
+        </br>
+          <p>
+            CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is with a simple syntax example and also covers some key terms about the language.</p>
+            <p>
+            </br>
+            Headings will look larger than regular text, paragraphs break onto a new line and have space between them. Links are colored and underlined to distinguish them from the rest of the text. What you are seeing are the browser's default styles — very basic styles — that the browser applies to HTML to make sure that the page will be basically readable even if no explicit styling is specified by the author of the page.
+            </p>
+        </br>
+            <p>
+            However, the web would be a boring place if all websites looked like that. Using CSS, you can control exactly how HTML elements look in the browser, presenting your markup using whatever design you like.However, the web would be a boring place if all websites looked like that. Using CSS, you can control exactly how HTML elements look in the browser, presenting your markup using whatever design you like.
+        </br>
+          </p>
+          
+        </div>
+        <div class="container">
+          <h1 id="header3">How CSS is structured</h1>
+          <p>
+            First, let's examine three methods of applying CSS to a document: with an external stylesheet, with an internal stylesheet, and with inline styles.
+          </br>
+        </br>
+            <h2> STYLESHEET </h2>
+        </br>
+            An external stylesheet contains CSS in a separate file with a .css extension. This is the most common and useful method of bringing CSS to a document. You can link a single CSS file to multiple web pages, styling all of them with the same CSS stylesheet. In the Getting started with CSS, we linked an external stylesheet to our web page.
+            
+            You reference an external CSS stylesheet from an HTML <link> element.
+    </br>
+</br>
+    The href attribute of the <link> element needs to reference a file on your file system. In the example above, the CSS file is in the same folder as the HTML document, but you could place it somewhere else and adjust the path.
+</br>
+          </p>
+        </div>
+        <div class="container">
+          <h1 id="header4">How CSS works</h1>
+          <p>
+            When a browser displays a document, it must combine the document's content with its style information. It processes the document in a number of stages, which we've listed below. Bear in mind that this is a very simplified version of what happens when a browser loads a webpage, and that different browsers will handle the process in different ways. But this is roughly what happens.
+            <ul>
+<li>
+It converts the HTML into a DOM (Document Object Model). The DOM represents the document in the computer's memory. The DOM is explained in a bit more detail in the next section.
+</li>
+<li>The browser then fetches most of the resources that are linked to by the HTML document, such as embedded images and videos ... and linked CSS! JavaScript is handled a bit later on in the process, and we won't talk about it here to keep things simpler.</li>
+<li>The browser parses the fetched CSS, and sorts the different rules by their selector types into different "buckets", e.g. element, class, ID, and so on. Based on the selectors it finds, it works out which rules should be applied to which nodes in the DOM, and attaches style to them as required (this intermediate step is called a render tree).</li>
+<li>The render tree is laid out in the structure it should appear in after the rules have been applied to it.</li>
+<li>The visual display of the page is shown on the screen (this stage is called painting).</li>
+</ul>
+</p>
+        </div>
+      </div>
+    </div>
+    <!-------------------- Footer ------------------->
+    <p class="footer">&copy; by <span>Naman Mathur</span></p>
+
+  </body>
+</html>

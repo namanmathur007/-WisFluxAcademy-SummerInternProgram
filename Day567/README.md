@@ -1,1 +1,2 @@
-TinDog Starting Files
+AdoptNotShop Landing Page
+

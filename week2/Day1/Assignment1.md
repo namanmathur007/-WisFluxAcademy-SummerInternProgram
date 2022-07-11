@@ -103,10 +103,15 @@ console.log(average);
 
 <strong>2 Swap variables using reference.</strong>
 
-function swapUsingReference(objRef) { let temp = objRef.var2; objRef.var2 = objRef.var1; objRef.var1 = temp; }
+const swap_nums = (num1, num2) => {
+	let temp = num1
+	num1 = num2
+	num2 = temp
 
-const sampObj = { var1: 5, var2: 2, }; console.log(sampObj); swapUsingReference(sampObj);
- console.log(sampObj);
+	return { num1, num2 }
+}
+
+console.log(swap_nums(6, 3))
 
 <!-- Or -->
 
@@ -114,20 +119,34 @@ let a = 5; let b = 2; console.log(a + " ," + b); [a, b] = [b, a]; console.log(a 
 
 <strong>3 Print the fibonacci sequence.</strong>
 
-function printFibonacciSequence() { let inputNum = parseInt(prompt("Enter a number: ")); let a = 0, b = 1; let nextVal; for (let i = 1; i <= inputNum; i++) { console.log(a); nextVal = a + b; a = b; b = nextVal; } }
-
-console.log("Fibonacci sequence: "); printFibonacciSequence();
+const printFibonacci = (nterm) => {
+    const number = nterm
+    let n1 = 0, n2 = 1, nextTerm
+    
+    console.log('Fibonacci Series:')
+    
+    for (let i = 1; i <= number; i++) {
+        console.log(n1)
+        nextTerm = n1 + n2
+        n1 = n2
+        n2 = nextTerm
+    }
+ }
+ 
+ printFibonacci(20)
 
 <Strong>Sort an array in both ascending order and descending order.</Strong>
 
 <!-- Sort numbers in ascending order: -->
+const sortArray = (arr) => {
+	let ascending = new Int32Array(arr).sort()
+	let descending = new Int32Array(arr).sort().reverse()
+	return {
+		"ascending": Array.from(ascending),
+		"descending": Array.from(descending)
+	}
+}
 
-const points = [40, 100, 1, 5, 25, 10];
-
-points.sort(function(a, b){return a-b});
-
-<!-- Sort numbers in descending order: -->
-
-const points = [40, 100, 1, 5, 25, 10];
-
-points.sort(function(a, b){return b-a});
+<strong>how a variable value in an HTML webpage using DOM?</strong>
+let a = 6
+document.write(a)

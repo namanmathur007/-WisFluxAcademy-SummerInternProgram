@@ -1,9 +1,9 @@
-const swap_nums = (num1, num2) => {
-	let temp = num1
-	num1 = num2
-	num2 = temp
+const swap_nums = (a, b) => {
+	let temp = a
+	a = b
+	b = temp
 
-	return { num1, num2 }
+	return { a, b }
 }
 
 console.log(swap_nums(6, 3))

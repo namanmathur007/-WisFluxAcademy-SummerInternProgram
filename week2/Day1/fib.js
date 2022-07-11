@@ -1,14 +1,14 @@
-const printFibonacci = (nterm) => {
-    const number = nterm
-    let n1 = 0, n2 = 1, nextTerm
+const printFibonacci = (n) => {
+    const number = n
+    let a = 0, b = 1, nextTerm
     
     console.log('Fibonacci Series:')
     
     for (let i = 1; i <= number; i++) {
-        console.log(n1)
-        nextTerm = n1 + n2
-        n1 = n2
-        n2 = nextTerm
+        console.log(a)
+        nextTerm = a + b
+        a = b
+        b = nextTerm
     }
  }
  

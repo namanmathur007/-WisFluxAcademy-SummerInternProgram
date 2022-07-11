@@ -94,59 +94,6 @@ Using this, we can transform a website from having very basic functionality to b
 <!--------------------- Programs --------------------->
 <strong>Programs<strong>
 
-<strong>1 Average of array nums in JS.</strong>
-
-const arr = [1, 2, 3, 4, 5];
-const average = arr.reduce((a, b) => a + b, 0) / arr.length;
-
-console.log(average);
-
-<strong>2 Swap variables using reference.</strong>
-
-const swap_nums = (num1, num2) => {
-	let temp = num1
-	num1 = num2
-	num2 = temp
-
-	return { num1, num2 }
-}
-
-console.log(swap_nums(6, 3))
-
-<!-- Or -->
-
-let a = 5; let b = 2; console.log(a + " ," + b); [a, b] = [b, a]; console.log(a + " ," + b);
-
-<strong>3 Print the fibonacci sequence.</strong>
-
-const printFibonacci = (nterm) => {
-    const number = nterm
-    let n1 = 0, n2 = 1, nextTerm
-    
-    console.log('Fibonacci Series:')
-    
-    for (let i = 1; i <= number; i++) {
-        console.log(n1)
-        nextTerm = n1 + n2
-        n1 = n2
-        n2 = nextTerm
-    }
- }
- 
- printFibonacci(20)
-
-<Strong>Sort an array in both ascending order and descending order.</Strong>
-
-<!-- Sort numbers in ascending order: -->
-const sortArray = (arr) => {
-	let ascending = new Int32Array(arr).sort()
-	let descending = new Int32Array(arr).sort().reverse()
-	return {
-		"ascending": Array.from(ascending),
-		"descending": Array.from(descending)
-	}
-}
-
 <strong>how a variable value in an HTML webpage using DOM?</strong>
 let a = 6
 document.write(a)

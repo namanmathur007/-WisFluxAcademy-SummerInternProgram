@@ -92,7 +92,6 @@ Using this, we can transform a website from having very basic functionality to b
 
 
 <!--------------------- Programs --------------------->
-<strong>Programs<strong>
 
 <strong>how a variable value in an HTML webpage using DOM?</strong>
 let a = 6
